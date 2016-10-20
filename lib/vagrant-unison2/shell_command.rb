@@ -29,6 +29,7 @@ module VagrantPlugins
           'unison',
           local_root_arg,
           remote_root_arg,
+          '-ui text',
           batch_arg,
           terse_arg,
           repeat_arg,
