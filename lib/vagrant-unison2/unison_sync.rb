@@ -7,6 +7,8 @@ module VagrantPlugins
       def execute_sync_command(machine)
         parse_options!
 
+        return unless machine.config.unison.host_folder
+
         unison_paths = UnisonPaths.new(@env, machine)
         guest_path = unison_paths.guest
         host_path = unison_paths.host
