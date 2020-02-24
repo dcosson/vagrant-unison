@@ -7,4 +7,5 @@ group :development do
   # gem dependency because we expect to be installed within the
   # Vagrant environment itself using `vagrant plugin`.
   gem "vagrant", :git => "https://github.com/hashicorp/vagrant.git"
+  gem "rake", "< 11.0"
 end
